@@ -1,0 +1,12 @@
+Algorithm: GRAPH_SEARCH:
+frontier = {startNode}
+expanded = {}
+while frontier is not empty:
+    node = frontier.pop()
+    if isGoal(node):
+        return path_to_node
+    if node not in expanded:
+        expanded.add(node)
+        for each child of node's children:
+            frontier.push(child)
+return failed
